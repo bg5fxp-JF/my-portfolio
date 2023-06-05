@@ -42,7 +42,7 @@ export default function Navbar() {
 					</div>
 
 					<div className="flex space-x-6">
-						<Link href="https://github.com/">
+						<Link href="https://github.com/bg5fxp-JF">
 							<AiFillGithub
 								className="transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
 								size="1.75rem"
@@ -97,14 +97,18 @@ export default function Navbar() {
 						About
 					</p>
 					<div className="flex space-x-6">
-						<AiFillGithub
-							className="transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
-							size="1.75rem"
-						/>
-						<AiFillLinkedin
-							className="transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
-							size="1.75rem"
-						/>
+						<Link href="https://github.com/bg5fxp-JF">
+							<AiFillGithub
+								className="transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
+								size="1.75rem"
+							/>
+						</Link>
+						<Link href="https://www.linkedin.com/in/jacob-fecunda-40047b184/">
+							<AiFillLinkedin
+								className="transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
+								size="1.75rem"
+							/>
+						</Link>
 					</div>
 				</div>
 			</div>
