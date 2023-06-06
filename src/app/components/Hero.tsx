@@ -32,14 +32,14 @@ export default function Hero() {
 			>
 				<div className="relative p-5 bg-black bg-opacity-20">
 					<div id="parallax-text1" className="text-white pt-7">
-						<p className="font-Inter  text-8xl sm:text-10xl text-right font-medium ">
+						<p className="font-Inter text-7xl xs:text-8xl sm:text-10xl text-right font-medium ">
 							<span className="underline underline-offset-8">I'm</span>{" "}
 							<span className="underline underline-offset-8">Jacob</span>
 						</p>
 						<br />
 						<p
 							id="parallax-text2"
-							className="font-Inter text-8xl sm:text-10xl text-right font-medium"
+							className="font-Inter text-6xl xs:text-7xl sm:text-10xl text-right font-medium"
 						>
 							I build
 							<br />

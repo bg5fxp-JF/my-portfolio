@@ -10,7 +10,7 @@ export default function About() {
 			<h4 className="font-Fredoka text-5xl  mb-6  text-shadow shadow-black">
 				About me
 			</h4>
-			<p className="font-Inter text-md font-light">
+			<p className="font-Inter text-sm xs:text-reg font-light">
 				I'm a forward-thinking software developer, who thrives in the face of
 				challenges and embodies an unwavering commitment to lifelong learning.{" "}
 				<br />

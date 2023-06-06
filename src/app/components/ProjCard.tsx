@@ -50,7 +50,7 @@ export default function ProjCard({ title, img, vid, tech }: any) {
 						return (
 							<ul
 								key={index}
-								className="text-black text-xsm sm:text-sm px-4 py-2 bg-white rounded-full"
+								className="text-black text-[6px] px-2 py-1 xs:text-xsm sm:text-sm xs:px-4 xs:py-2 bg-white rounded-full"
 							>
 								{language}
 							</ul>
