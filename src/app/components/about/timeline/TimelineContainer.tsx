@@ -1,31 +1,9 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 export default function TimelineContainer({ children }: any) {
 	const [activePage, setActivePage] = useState(0);
 	const [itemsPerPage, setItemsPerPage] = useState(2);
-
-	// const updateItemsPerPage = () => {
-	// 	// Update the number of items per page depending on the window width
-	// 	if (window.innerWidth < 480) {
-	// 		setItemsPerPage(2);
-	// 	} else if (window.innerWidth < 768) {
-	// 		setItemsPerPage(2);
-	// 	} else {
-	// 		setItemsPerPage(2);
-	// 	}
-	// };
-
-	// useEffect(() => {
-	// 	// Initialize items per page
-	// 	updateItemsPerPage();
-
-	// 	// Add resize event listener
-	// 	window.addEventListener("resize", updateItemsPerPage);
-
-	// 	// Clean up
-	// 	return () => window.removeEventListener("resize", updateItemsPerPage);
-	// }, []);
 
 	const totalPages = Math.ceil(React.Children.count(children) / itemsPerPage);
 
@@ -35,7 +13,6 @@ export default function TimelineContainer({ children }: any) {
 		const percentageScrolled = element.scrollLeft / totalScroll;
 		const page = Math.round(percentageScrolled * totalPages);
 		setActivePage(page);
-		console.log(activePage);
 	};
 
 	return (
