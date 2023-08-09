@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { ps } from "../../constants/variants";
+import { prs } from "../../constants/variants";
 
 export default function ProjCard({ title, img, vid, tech }: any) {
 	const videoRef = React.createRef<HTMLVideoElement>();
@@ -28,7 +28,7 @@ export default function ProjCard({ title, img, vid, tech }: any) {
 
 	return (
 		<motion.div
-			variants={ps}
+			variants={prs}
 			initial="hidden"
 			animate={isInView ? "show" : "hidden"}
 			ref={ref}
