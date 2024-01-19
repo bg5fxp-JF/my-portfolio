@@ -26,7 +26,7 @@ export default function Navbar() {
 	const containerRef = useRef(null);
 
 	return (
-		<nav className="relative container mx-auto  p-6 z-10">
+		<nav className="relative container mx-auto  p-6 z-10 xl:px-[10%]">
 			<div className="flex items-center justify-between text-white text-shadow shadow-black">
 				<Link href="/">
 					<p className="font-Fredoka text-5xl">J F</p>
@@ -36,21 +36,21 @@ export default function Navbar() {
 					<div className="flex space-x-6">
 						<p
 							onClick={() => {
-								const element = document.getElementById("projects");
-								if (element) element.scrollIntoView({ behavior: "smooth" });
-							}}
-							className="font-Fredoka transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
-						>
-							Projects
-						</p>
-						<p
-							onClick={() => {
 								const element = document.getElementById("about");
 								if (element) element.scrollIntoView({ behavior: "smooth" });
 							}}
 							className="font-Fredoka transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
 						>
 							About
+						</p>
+						<p
+							onClick={() => {
+								const element = document.getElementById("projects");
+								if (element) element.scrollIntoView({ behavior: "smooth" });
+							}}
+							className="font-Fredoka transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
+						>
+							Projects
 						</p>
 					</div>
 
@@ -96,18 +96,6 @@ export default function Navbar() {
 					>
 						<p
 							onClick={() => {
-								const element = document.getElementById("projects");
-								if (element) {
-									element.scrollIntoView({ behavior: "smooth" });
-									handleMenuClick();
-								}
-							}}
-							className="font-Fredoka transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
-						>
-							Projects
-						</p>
-						<p
-							onClick={() => {
 								const element = document.getElementById("about");
 								if (element) {
 									element.scrollIntoView({ behavior: "smooth" });
@@ -117,6 +105,18 @@ export default function Navbar() {
 							className="font-Fredoka transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
 						>
 							About
+						</p>
+						<p
+							onClick={() => {
+								const element = document.getElementById("projects");
+								if (element) {
+									element.scrollIntoView({ behavior: "smooth" });
+									handleMenuClick();
+								}
+							}}
+							className="font-Fredoka transition duration-300 ease-in-out text-white rounded-full  transform hover:scale-125 cursor-pointer"
+						>
+							Projects
 						</p>
 						<div className="flex space-x-6">
 							<Link href="https://github.com/bg5fxp-JF">

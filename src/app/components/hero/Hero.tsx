@@ -36,17 +36,17 @@ export default function Hero() {
 					/>
 				</div>
 				<Navbar />
-				<div className="container mx-auto relative p-5">
+				<div className="container mx-auto relative p-5 xl:px-[10%]">
 					<div data-scroll data-scroll-speed="0.5" className="text-white pt-7">
-						<p className="font-Inter text-7xl xs:text-8xl sm:text-10xl md:text-10xl text-right font-medium ">
+						<p className="font-Inter text-7xl xs:text-8xl sm:text-9xl lg:text-10xl text-right font-medium ">
 							<span className="underline underline-offset-8">I'm</span>{" "}
 							<span className="underline underline-offset-8">Jacob</span>
 						</p>
 						<br />
-						<p className="font-Inter text-6xl xs:text-7xl sm:text-10xl md:text-10xl text-right font-medium">
-							I build
-							<br />
-							websites <br /> for clients
+						<p className="font-Inter text-6xl xs:text-7xl sm:text-9xl lg:text-10xl text-right font-medium">
+							A<br />
+							Full-stack <br />
+							Web 3 Dev
 						</p>
 					</div>
 				</div>
